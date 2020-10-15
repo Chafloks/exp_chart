@@ -38,7 +38,7 @@ function buildPlot(pokemon1,pokemon2) {
           for (i=0;i<levels2.length;i++){
             experience2.push(levels2[i].experience)
           };
-          var ctx = document.getElementById('myChart1').getContext('2d');
+          var ctx = document.getElementById('myChart').getContext('2d');
               var myLineChart = new Chart(ctx, {
                   type: 'line',
                   data: {
@@ -55,8 +55,7 @@ function buildPlot(pokemon1,pokemon2) {
                       labels: numbs
                   }
               }).Line(data, {
-                responsive: true,
-                maintainAspectRatio: false
+                responsive: false
               });
         });
       });
