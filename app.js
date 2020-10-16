@@ -7,8 +7,10 @@ function handleSubmit() {
   
     // Select the input value from the form
     var pokemon1 = d3.select("#Pokemon1").node().value;
+    pokemon1 = pokemon1.toLowerCase();
     console.log(pokemon1);
     var pokemon2 = d3.select("#Pokemon2").node().value;
+    pokemon2 = pokemon2.toLowerCase();
     console.log(pokemon2);
     // clear the input value
     d3.select("#Pokemon1").node().value = "";
