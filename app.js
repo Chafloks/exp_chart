@@ -54,8 +54,6 @@ function buildPlot(pokemon1,pokemon2) {
                       }],
                       labels: numbs
                   }
-              }).Line(data, {
-                responsive: false
               });
         });
       });
