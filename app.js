@@ -53,6 +53,9 @@ function buildPlot(pokemon1,pokemon2) {
                         borderColor: "#FF0000"
                       }],
                       labels: numbs
+                  },
+                  options: {
+                    responsive: false
                   }
               });
         });
